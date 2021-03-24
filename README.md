@@ -2,7 +2,9 @@
 ## Desafio de programação orientada a objetos em Python. // Python object-oriented programming challenge.
 
 Na pasta "SOLUÇÃO" está a solução dos professores o seguinte desafio:
+
 //
+
 In the "SOLUÇÃO" folder there's the teachers soluction the following challenge:
 
 - 
