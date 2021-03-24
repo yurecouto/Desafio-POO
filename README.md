@@ -30,7 +30,9 @@ Banco será responsável autenticar o cliente e as contas da seguinte maneira:
     * Checar se o cliente é daquele banco
     * Checar se a conta é daquele banco
 Só será possível sacar se passar na autenticação do banco (descrita acima)
+
 //
+
 Exercise with Abstraction, Inheritance, Encapsulation and Polymorphism
 Create a banking system (extremely simple) that has customers, accounts and
 a bank. The idea is that the customer has an account (savings or checking) and that
