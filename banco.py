@@ -21,3 +21,4 @@ class Banco:
             return None
 
         return True
+        
