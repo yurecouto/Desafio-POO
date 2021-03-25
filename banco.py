@@ -1,20 +1,13 @@
-from abc import ABC, abstractmethod
-
-class Conta(ABC):
-    def __init__(self, agencia, numero, saldo):
-        self.agencia = list()
-        self.numero = list()
-        self.saldo = list()
-
-    def deposito(self, valor):
-        self.saldo += valor
-
-    def detalhes(self):
-        print(f'Agencia: {self.agencia} \nNumero: {self._numero} \nSaldo: {self.saldo}')
-
-    @abstractmethod
-    def sacar(self, valor): pass
-
-class Conta_corrente(Conta):
+class Banco:
     def __init__(self):
-        pass
+        self.agencias = [1111, 2222, 3333]
+        self.clientes = list()
+        self.contas = list()
+    
+    def inserir_cliente(self, cliente):
+        self.clientes.append(cliente)
+    
+    def inserir_conta(self, conta):
+        self.contas.append(conta)
+
+    
