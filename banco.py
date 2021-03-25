@@ -10,4 +10,14 @@ class Banco:
     def inserir_conta(self, conta):
         self.contas.append(conta)
 
-    
+    def autenticar(self, cliente):
+        if cliente not in self.clientes:
+            return None
+        
+        if cliente.conta not in self.contas:
+            return None
+
+        if cliente.conta.agencia not in self.agencias:
+            return None
+
+        return True

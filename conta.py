@@ -1,16 +1,16 @@
 from abc import ABC, abstractmethod
 
 class Conta(ABC):
-    def __init__(self, agencia, numero, saldo):
+    def __init__(self, agencia, conta, saldo):
         self.agencia = agencia
-        self.numero = numero
+        self.conta = conta
         self.saldo = saldo
 
     def deposito(self, valor):
         self.saldo += valor
 
     def detalhes(self):
-        print(f'Agencia: {self.agencia} \nNumero: {self._numero} \nSaldo: {self.saldo}')
+        print(f'Agencia: {self.agencia} \nNumero: {self.conta} \nSaldo: {self.saldo}')
 
     @abstractmethod
     def sacar(self, valor): 
@@ -28,8 +28,8 @@ class Conta_poupanca(Conta):
 
 
 class Conta_corrente(Conta):
-    def __init__(self, agencia, numero, saldo, limite=100):
-        super().__init__(agencia, numero, saldo)
+    def __init__(self, agencia, conta, saldo, limite=100):
+        super().__init__(agencia, conta, saldo)
         self.limite = limite
         
     def sacar(self, valor):
